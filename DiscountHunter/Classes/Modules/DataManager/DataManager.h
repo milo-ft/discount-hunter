@@ -13,4 +13,6 @@
 
 + (DataManager *)currentData;
 
+@property (strong, nonatomic) FBSession *session;
+
 @end

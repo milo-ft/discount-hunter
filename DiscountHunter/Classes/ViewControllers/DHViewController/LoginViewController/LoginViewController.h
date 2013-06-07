@@ -12,5 +12,6 @@
 
 
 - (IBAction)loginAction:(id)sender;
+- (void)loadViewControllers;
 
 @end

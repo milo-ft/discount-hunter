@@ -14,7 +14,8 @@
 
 typedef enum
 {
-    listViewController
+    listViewController,
+    uploadImageViewController,
 }typeViewController;
 
 

@@ -27,6 +27,7 @@
 
 #import "BaseViewController.h"
 #import "ListViewController.h"
+#import "PhotoViewController.h"
 
 @implementation BaseViewController
 
@@ -37,24 +38,29 @@
                                            type:(typeViewController)newType
 {
     
-    DHViewController *newViewController = nil;
+    UIViewController *newViewController = nil;
     
     switch (newType) {
         case listViewController:{
-            newViewController = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
+            ListViewController *lViewController = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
+            newViewController = [[UINavigationController alloc] initWithRootViewController:lViewController];
+
         }
             
             break;
-            
+        case uploadImageViewController:{
+            newViewController = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
+
+        }
+            break;
         default:
             break;
     }
     
-    UINavigationController *nController = [[UINavigationController alloc] initWithRootViewController:newViewController];
     
-  nController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:image tag:0];
+    newViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:image tag:0];
     
-  return nController;
+  return newViewController;
 }
 
 // Create a custom UIButton and add it to the center of our tab bar
@@ -65,7 +71,8 @@
   button.frame = CGRectMake(0.0, 0.0, buttonImage.size.width, buttonImage.size.height);
   [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
   [button setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
-
+    [button addTarget:self action:@selector(loadPhotoViewController) forControlEvents:UIControlEventTouchUpInside];
+    
   CGFloat heightDifference = buttonImage.size.height - self.tabBar.frame.size.height;
   if (heightDifference < 0)
     button.center = self.tabBar.center;
@@ -78,6 +85,30 @@
   
   [self.view addSubview:button];
 }
+
+- (void)loadPhotoViewController{
+    /*
+    for (UIViewController *tViewController in self.viewControllers) {
+        
+        if ([tViewController isKindOfClass:[PhotoViewController class]]) {
+            PhotoViewController *pViewController = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
+
+            [self presentViewController:tViewController animated:TRUE completion:^{
+                
+            }];
+            break;
+        }
+         
+    }
+    */
+    PhotoViewController *pViewController = [[PhotoViewController alloc] initWithNibName:@"PhotoViewController" bundle:nil];
+    
+    [self presentViewController:pViewController animated:TRUE completion:^{
+        
+    }];
+
+}
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
