@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class InstagramViewController;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) InstagramViewController *viewController;
+
 
 @end

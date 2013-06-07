@@ -1,21 +1,33 @@
 //
 //  AppDelegate.m
 //  DiscountHunter
-//
+//´
 //  Created by iMac HS on 07-06-13.
 //  Copyright (c) 2013 Happyshop. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "InstagramViewController.h"
+#import "DataManager.h"
 
 @implementation AppDelegate
 
+@synthesize viewController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [DataManager currentData];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    InstagramViewController *iViewController = [[InstagramViewController alloc] initWithNibName:nil bundle:nil];
+
+    [self.window setRootViewController:iViewController];
+
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
