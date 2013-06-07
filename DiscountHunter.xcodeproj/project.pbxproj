@@ -90,6 +90,7 @@
 		C821FDF217623CD7000AD5B2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C821FDF017623CD7000AD5B2 /* LoginViewController.m */; };
 		C821FDF317623CD7000AD5B2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C821FDF117623CD7000AD5B2 /* LoginViewController.xib */; };
 		C821FDF717623F96000AD5B2 /* FBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C821FDF617623F96000AD5B2 /* FBManager.m */; };
+		C821FDF9176240F6000AD5B2 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C821FDF8176240F5000AD5B2 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -189,6 +190,7 @@
 		C821FDF117623CD7000AD5B2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		C821FDF517623F96000AD5B2 /* FBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBManager.h; sourceTree = "<group>"; };
 		C821FDF617623F96000AD5B2 /* FBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBManager.m; sourceTree = "<group>"; };
+		C821FDF8176240F5000AD5B2 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = DiscountHunter/Framework/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C821FDF9176240F6000AD5B2 /* FacebookSDK.framework in Frameworks */,
 				C821FDE517623ACE000AD5B2 /* AudioToolbox.framework in Frameworks */,
 				C821FDE617623ACE000AD5B2 /* CFNetwork.framework in Frameworks */,
 				C821FDE717623ACE000AD5B2 /* CoreLocation.framework in Frameworks */,
@@ -235,6 +238,7 @@
 		C821FCEB17622CAE000AD5B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C821FDF8176240F5000AD5B2 /* FacebookSDK.framework */,
 				C821FDDC17623ACC000AD5B2 /* AudioToolbox.framework */,
 				C821FDDD17623ACC000AD5B2 /* CFNetwork.framework */,
 				C821FDDE17623ACC000AD5B2 /* CoreLocation.framework */,
