@@ -7,6 +7,11 @@
 #define kOAuthConsumerKey @"d08a9w6ehrNAuceIcsDR9w"
 #define kOAuthConsumerSecret @"LBE3JE4ZPeGdKt2xLQVg0sQ2VbiieRvuR5PbPC4w"
 
+#define  app_id @"aa6AuQZU5VmmHDUvQEXvUcHNHsl5jDY7NV96SfRi"
+#define  client_key @"TrXs35CN6EPbS63YVtzaLueOrbwBM6VF9iMqZHn1"
+#define  rest_api @"qSAX1E62jCN6EANL7g1YPi3w6YeRFIhOSx4UKQs8"
+
+
 typedef enum
 {
     listViewController

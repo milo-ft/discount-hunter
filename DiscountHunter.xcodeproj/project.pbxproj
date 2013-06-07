@@ -89,6 +89,7 @@
 		C821FDED17623ACE000AD5B2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C821FDE417623ACD000AD5B2 /* SystemConfiguration.framework */; };
 		C821FDF217623CD7000AD5B2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C821FDF017623CD7000AD5B2 /* LoginViewController.m */; };
 		C821FDF317623CD7000AD5B2 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C821FDF117623CD7000AD5B2 /* LoginViewController.xib */; };
+		C821FDF717623F96000AD5B2 /* FBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C821FDF617623F96000AD5B2 /* FBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +187,8 @@
 		C821FDEF17623CD7000AD5B2 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		C821FDF017623CD7000AD5B2 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C821FDF117623CD7000AD5B2 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		C821FDF517623F96000AD5B2 /* FBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBManager.h; sourceTree = "<group>"; };
+		C821FDF617623F96000AD5B2 /* FBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +427,7 @@
 		C821FDD5176237A4000AD5B2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				C821FDF417623F86000AD5B2 /* SocialManager */,
 				C821FDD6176237A4000AD5B2 /* DataManager */,
 			);
 			path = Modules;
@@ -446,6 +450,15 @@
 				C821FDF117623CD7000AD5B2 /* LoginViewController.xib */,
 			);
 			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		C821FDF417623F86000AD5B2 /* SocialManager */ = {
+			isa = PBXGroup;
+			children = (
+				C821FDF517623F96000AD5B2 /* FBManager.h */,
+				C821FDF617623F96000AD5B2 /* FBManager.m */,
+			);
+			path = SocialManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,6 +591,7 @@
 				C821FDD21762352C000AD5B2 /* ListViewController.m in Sources */,
 				C821FDD9176237B3000AD5B2 /* DataManager.m in Sources */,
 				C821FDF217623CD7000AD5B2 /* LoginViewController.m in Sources */,
+				C821FDF717623F96000AD5B2 /* FBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

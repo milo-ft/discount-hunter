@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "InstagramViewController.h"
 
 @interface LoginViewController ()
 
@@ -33,6 +34,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)loginAction:(id)sender {
+    
+    InstagramViewController *iViewController = [[InstagramViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentViewController:iViewController animated:TRUE completion:^{
+        
+    }];
 }
 
 @end

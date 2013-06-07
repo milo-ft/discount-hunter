@@ -7,6 +7,7 @@
 //
 
 #import "DataManager.h"
+#import "Definitions.h"
 
 @implementation DataManager 
 
@@ -30,6 +31,12 @@ static DataManager *_instance;
 - (id)init{
     self = [super init];
     if (self) {
+        
+        [Parse setApplicationId:app_id
+                      clientKey:client_key];
+        
+        
+        
         PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
         [testObject setObject:@"bar" forKey:@"foo"];
         
@@ -40,6 +47,7 @@ static DataManager *_instance;
                 // There was an error saving the gameScore.
             }
         }];
+         
     }
     return self;
 }

@@ -10,4 +10,7 @@
 
 @interface LoginViewController : DHViewController
 
+
+- (IBAction)loginAction:(id)sender;
+
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "InstagramViewController.h"
+#import "LoginViewController.h"
 #import "DataManager.h"
 
 @implementation AppDelegate
@@ -22,9 +22,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     
-    InstagramViewController *iViewController = [[InstagramViewController alloc] initWithNibName:nil bundle:nil];
+    LoginViewController *lViewController = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
 
-    [self.window setRootViewController:iViewController];
+    [self.window setRootViewController:lViewController];
 
     [self.window makeKeyAndVisible];
     
